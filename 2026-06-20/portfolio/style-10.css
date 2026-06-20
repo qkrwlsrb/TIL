@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f4f6fb;
+    color: #1a1a2e;
+}
+
+/* ── HEADER ── */
+header {
+    background-color: blue;
+    display: flex;
+    width: 100%;
+    height: 64px;
+    padding: 0 40px;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0, 0, 200, 0.25);
+}
+
+header > span {
+    display: none;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.project {
+    display: flex;
+    gap: 36px;
+    flex: 1;
+    justify-content: center;
+}
+
+.project a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.project a:hover,
+.project a.active {
+    color: white;
+    border-bottom-color: white;
+}
+
+.login {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    padding: 8px 22px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.login:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    border-color: white;
+}
+
+/* ── MAIN SECTION ── */
+.main {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 60px 80px;
+    background-color: #ffffff;
+}
+
+.main img {
+    width: 360px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 20px;
+    flex-shrink: 0;
+    box-shadow: 0 12px 32px rgba(0, 0, 200, 0.15);
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 6px;
+}
+
+.int, .str, .good, .stu {
+    background-color: #eef1ff;
+    border-left: 4px solid blue;
+    border-radius: 0 12px 12px 0;
+    padding: 16px 24px;
+}
+
+.int h2, .str h2, .good h2, .stu h2 {
+    margin: 0 0 8px 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: blue;
+}
+
+.int p, .str p, .good p, .stu p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #444;
+}
+
+/* ── DIVIDER ── */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #c0caff, transparent);
+    margin: 0 80px;
+}
+
+/* ── JP SECTION ── */
+.jp {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 60px 80px;
+    background-color: #ffffff;
+}
+
+.jp img {
+    width: 360px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 20px;
+    flex-shrink: 0;
+    box-shadow: 0 12px 32px rgba(0, 0, 200, 0.15);
+}
+
+.want {
+    flex: 1;
+    background-color: #eef1ff;
+    border-left: 4px solid blue;
+    border-radius: 0 12px 12px 0;
+    padding: 20px 28px;
+    margin-top: 10px;
+}
+
+.want h2 {
+    margin: 0 0 10px 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: blue;
+}
+
+.want p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #444;
+}
+
+/* ── BOTTOM: 취미 & 여행 ── */
+.bottom {
+    display: flex;
+    gap: 40px;
+    padding: 60px 80px;
+    align-items: flex-start;
+    background-color: #eef1ff;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 3px solid blue;
+}
+
+.section-header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.section-icon {
+    font-size: 22px;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.travle {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 14px 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 150, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: default;
+    width: 100%;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 200, 0.14);
+}
+
+.card-emoji {
+    font-size: 26px;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dde4ff;
+    border-radius: 10px;
+}
+
+.card-text h2 {
+    margin: 0 0 3px 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.card-text p {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+}

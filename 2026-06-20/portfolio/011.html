@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Archive | JG's Life</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="style-11.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">JG's Life</h1>
+        <div class="project">
+            <a href="010.html">메인화면</a>
+            <a href="011.html" class="active">프로젝트</a>
+            <a href="012.html">연락하기</a>
+        </div>
+        <button class="login">로그인</button>
+    </header>
+
+    <!-- 히어로 -->
+    <section class="hero">
+        <div class="hero-text">
+            <span class="badge">Flutter · Firebase · Google Maps</span>
+            <h1>Place Archive</h1>
+            <p>GPS로 현재 위치를 자동 기록하고,<br>그 장소의 기억을 사진과 메모로 남기는<br><strong>위치 기반 타임캡슐 앱</strong></p>
+            <a class="github-btn" href="https://github.com/qkrwlsrb/place-archive" target="_blank">
+                🔗 GitHub 보기
+            </a>
+        </div>
+        <div class="hero-img-wrap">
+            <img src="https://github.com/qkrwlsrb/place-archive/raw/main/assets/screenshots/04_map.jpg" alt="지도 화면">
+        </div>
+    </section>
+
+    <!-- 주요 기능 -->
+    <section class="features">
+        <h2 class="section-title">주요 기능</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <span class="feature-icon">📍</span>
+                <h3>위치 기반 캡슐</h3>
+                <p>GPS로 현재 위치를 자동 기록하고 사진과 메모로 기억을 저장합니다.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🗺️</span>
+                <h3>지도 시각화</h3>
+                <p>Google Maps 위에 저장한 기억들을 마커로 표시해 한눈에 볼 수 있습니다.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🌍</span>
+                <h3>공개 피드</h3>
+                <p>다른 사용자의 기억을 탐색하고 새로운 장소를 발견할 수 있습니다.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔔</span>
+                <h3>Geofencing 알림</h3>
+                <p>저장한 장소 100m 이내 진입 시 해당 기억을 알림으로 띄워줍니다.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔍</span>
+                <h3>메모 검색</h3>
+                <p>메모 내용을 기반으로 기억을 검색하고 키워드를 하이라이트합니다.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">✏️</span>
+                <h3>기억 관리</h3>
+                <p>기억을 생성·조회·수정·삭제하는 완전한 CRUD 기능을 제공합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기술 스택 -->
+    <section class="techstack">
+        <h2 class="section-title">기술 스택</h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <span class="tech-icon">📱</span>
+                <div>
+                    <p class="tech-label">프레임워크</p>
+                    <p class="tech-value">Flutter 3.x (iOS · Android)</p>
+                </div>
+            </div>
+            <div class="tech-item">
+                <span class="tech-icon">🔄</span>
+                <div>
+                    <p class="tech-label">상태관리</p>
+                    <p class="tech-value">Provider</p>
+                </div>
+            </div>
+            <div class="tech-item">
+                <span class="tech-icon">🔐</span>
+                <div>
+                    <p class="tech-label">인증</p>
+                    <p class="tech-value">Firebase Auth</p>
+                </div>
+            </div>
+            <div class="tech-item">
+                <span class="tech-icon">🗄️</span>
+                <div>
+                    <p class="tech-label">데이터베이스</p>
+                    <p class="tech-value">Cloud Firestore</p>
+                </div>
+            </div>
+            <div class="tech-item">
+                <span class="tech-icon">📦</span>
+                <div>
+                    <p class="tech-label">스토리지</p>
+                    <p class="tech-value">Firebase Storage</p>
+                </div>
+            </div>
+            <div class="tech-item">
+                <span class="tech-icon">🗺️</span>
+                <div>
+                    <p class="tech-label">지도</p>
+                    <p class="tech-value">Google Maps Flutter</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 스크린샷 -->
+    <section class="screenshots">
+        <h2 class="section-title">스크린샷</h2>
+        <div class="screenshot-grid">
+            <div class="shot-card">
+                <img src="https://github.com/qkrwlsrb/place-archive/raw/main/assets/screenshots/01_login.jpg" alt="로그인 화면">
+                <p>🔑 로그인 화면</p>
+            </div>
+            <div class="shot-card">
+                <img src="https://github.com/qkrwlsrb/place-archive/raw/main/assets/screenshots/04_map.jpg" alt="지도 화면">
+                <p>🗺️ 지도 화면</p>
+            </div>
+            <div class="shot-card">
+                <img src="https://github.com/qkrwlsrb/place-archive/raw/main/assets/screenshots/02_create.jpg" alt="기억 남기기">
+                <p>✏️ 기억 남기기</p>
+            </div>
+            <div class="shot-card">
+                <img src="https://github.com/qkrwlsrb/place-archive/raw/main/assets/screenshots/03_detail.jpg" alt="기억 상세">
+                <p>📖 기억 상세</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>© 2024 박진규 · <a href="https://github.com/qkrwlsrb/place-archive" target="_blank">github.com/qkrwlsrb/place-archive</a></p>
+    </footer>
+</body>
+</html>
